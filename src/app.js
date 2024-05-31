@@ -10,6 +10,6 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const mainRouter = require('./routes/mainRouter')
-app.use('/', mainRouter)
+app.use('/post', mainRouter)
 
 module.exports = app
